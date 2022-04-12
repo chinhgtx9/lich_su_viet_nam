@@ -1,0 +1,776 @@
+/* INTRODUCE */
+
+.navbar{
+    width: 100%;
+    background-color: var(--black-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.navbar a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: min(6vw,1.5rem);
+    height: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: grey;
+}
+
+.introduce{
+    position: relative;
+    background-image: url(https://i.ibb.co/DR56dDn/redfort-night-mobiles.jpg);
+    background-size: cover;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.introduce__logo{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    color: var(--white-color);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.introduce__heading{
+    color: #A49863;
+    font-size: min(10vw, 6rem);
+    font-weight: 1000;
+    width: 100%;
+}
+
+.introduce__sub-heading{
+    font-size: min(5vw, 4rem);
+    word-spacing: 1.5rem;
+}
+
+.introduce__author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.introduce__author-line{
+    width: 50px;
+    height: 1px;
+    background-color: #FCD78E;
+    margin: 0 30px;
+
+}
+
+.introduce__author-name{
+    font-size: min(3vw, 2rem);
+    font-weight: 600;
+    color: #FCD78E;
+}
+
+.introduce__scroll-start{
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: min(3vw,2rem);
+    font-weight: 500;
+}
+
+.introduce__scroll-down{
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.introduce__scroll-down-btn{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    animation: scrolldownbtn 1s infinite;
+}
+
+
+/* DETAIL INTRODUCE */
+
+.detail-introduce{
+    position: relative;
+    background-image: url(https://i.ibb.co/L1JqVv8/delhi-city-desktop.jpg);
+    background-size: cover;
+    height: 1300px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.detail-introduce__nav{
+    background-color: var(--black-color);
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.detail-introduce__title{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-introduce__title h1{
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+
+
+.detail-introduce__title h2{
+    color: #FCD78E;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.detail-introduce__share{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: #817061;
+    cursor: pointer;
+}
+
+.detail-introduce__share:hover{
+    color: #d3bda2;
+}
+
+.detail-introduce__share i{
+    background-color: #817061;
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: black;
+    position: relative;
+}
+
+.detail-introduce__share h2{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.detail-introduce__share:hover + .detail-introduce__share-box{
+    display: block;
+}
+
+.detail-introduce__share-box{
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 20px;
+    width: 270px;
+    height: 124px;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: none;
+}
+
+.detail-introduce__share:after {
+    content: "";
+    width: 290px;
+    height: 140px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+
+
+.detail-introduce__share-icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-introduce__share-icon i{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.detail-introduce__share-icon a{
+    color: #817061;
+}
+
+.detail-introduce__share-guide{
+    width: 100%;
+    display: flex;
+    border-top: solid 1px grey;
+}
+
+.detail-introduce__share-guide p{
+    color: var(--white-color);
+    margin: 10px auto;
+}
+
+
+.detail-introduce__body{
+    width: 100%;
+    max-width: 730px;
+    margin: auto;
+    height: 400px;
+}
+
+.detail-introduce__header{
+    width: 100%;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.detail-introduce__header h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #3d3630;
+}
+
+.detail-introduce__content{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.detail-introduce__guide-header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 0.9rem;
+}
+
+.detail-introduce__guide-header:after{
+    content: "";
+    background-color: var(--black-color);
+    height: 120px;
+    width: 1px;
+    position: absolute;
+    top: calc(100% + 20px);
+}
+
+.detail-introduce__guide-image{
+    display: flex;
+}
+
+.detail-introduce__keyboard{
+    flex: 1;
+}
+
+.detail-introduce__keyboard-up{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.detail-introduce__keyboard-up span{
+    width: 30px;
+    height: 30px;
+    background-color: #d7be92 ;
+    border: solid 1px var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-introduce__keyboard-down{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.detail-introduce__keyboard-down span{
+    width: 30px;
+    height: 30px;
+    background-color: #d7be92 ;
+    border: solid 1px var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    color: #a59783;
+}
+
+.detail-introduce__keyboard-down .fa-angle-down{
+    color: var(--black-color);
+}
+
+
+.detail-introduce__mouse{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    opacity: 0.7;
+}
+
+
+/* body content */
+
+.body-content{
+    position: relative;
+    background-image: url(https://i.ibb.co/HgRGsCL/Vietnam-map-boundaries-cities-locator.webp);
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.body-content__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b64c10;
+    opacity: 1;
+    height: 42px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.body-content__header-title{
+    color: white;
+    font-size: 1.3rem;
+    margin: auto 0 auto 20px;
+}
+
+.body-content__header-view-more{
+    color: white;
+    font-size: 1rem;
+    margin: auto 20px auto 0;
+    cursor: pointer;
+}
+
+.body-content__summary{
+    display: flex;
+    margin: 200px 20px 20px 20px;
+    flex-wrap: wrap;
+}
+
+.body-content__brief-summary{
+    background-color: var(--white-color);
+    padding: 10px;
+    margin: 0 auto;
+    flex: 0.5;
+    min-width: 300px;
+    width: 100%;
+}
+
+.body-content__brief-summary-img{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.body-content__brief-summary-img img{
+    width: 100%;
+}
+
+.body-content__brief-summary-content{
+    border: solid 1px #d3bda2;
+}
+
+.body-content__brief-summary-header1{
+    margin: 10px;
+    font-size: 0.7rem;
+}
+
+.body-content__brief-summary-header2{
+    margin: 10px 10px 30px 10px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.body-content__brief-summary-header2:after{
+    content: "";
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+}
+
+.body-content__brief-summary-list{
+    padding: 20px;
+}
+
+.body-content__brief-summary-list li{
+    list-style: none;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 2rem;
+}
+
+.body-content__brief-summary-list li:nth-child(2),
+.body-content__brief-summary-list li:nth-child(4),
+.body-content__brief-summary-list li:nth-child(6){
+    background-color: #f5efe9;
+}
+
+.body-content__brief-detail-bgr{
+    padding: 10px;
+    background-color: var(--white-color);
+    flex: 1;
+    min-width: 300px;
+}
+
+.body-content__brief-detail{
+    border: solid 1px var(--primary-color);
+    padding: 20px;
+    background-color: var(--white-color);
+}
+
+.body-content__brief-detail-header{
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.body-content__brief-detail-header:after{
+    content: "";
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+}
+
+.body-content__brief-detail-content{
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-weight: 600;
+}
+
+/* Modal info */
+
+.info-box1,
+.info-box2,
+.info-box3,
+.info-box4,
+.info-box5{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255,0.9);
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;
+    overflow-y: auto;
+    display: none;
+    z-index: 9999999;
+    animation: modalopen 1s ease-in;
+}
+
+.info-box1.open,
+.info-box2.open,
+.info-box3.open,
+.info-box4.open,
+.info-box5.open{
+    display: flex;
+}
+
+.info-box__content-outside{
+    flex: 1;
+    margin-top: 40px;
+    background-color: rgb(230, 227, 219);
+    padding: 30px;
+    height: 100%;
+}
+
+.info-box__content{
+    background-color: var(--white-color);
+    padding: 30px;
+}
+
+.info-box__content-header{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.info-box__content-img{
+    width: 100%;
+    margin: 30px 0;
+    border: solid 2px var(--black-color);
+}
+
+.info-box__content-img img{
+    width: 100%;
+}
+
+
+.info-box__content-content h{
+    margin: 20px 0;
+}
+
+.info-box__content-content p{
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+
+.info-box__content-source{
+    color: var(--primary-color);
+}
+
+.info-box__close{
+    flex: 0.5;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    height: 44px;
+    width: 165px;
+    cursor: pointer;
+}
+
+.info-box__close span{
+    background-color:var(--black-color);
+    color: var(--white-color);
+    padding: 10px;
+    line-height: 25px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.info-box__close .fa-x{
+    background-color:var(--black-color);
+    color: var(--primary-color);
+    line-height: 25px;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+
+/* Auth form modal */
+.auth-form1,
+.auth-form2{
+    width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.auth-form1{
+    display: none;
+}
+
+.auth-form__container{
+    padding: 0 32px;
+}
+
+.auth-form__header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__switch-btn1,
+.auth-form__switch-btn2{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.auth-form__form{
+    margin-top: 16px;
+    width: 100%;
+}
+
+.auth-form__input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+    border: var(--border-color) 1px solid;
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__aside{
+    margin-top: 18px;
+}
+
+.auth-form__policy-text{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 0 12px;
+}
+
+.auth-form__text-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-form__controls{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__controls-back{
+    margin-right: 8px;
+}
+
+.auth-form__socials{
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.auth-form__socials-icon{
+    font-size: 1.8rem;
+}
+
+.auth-form__socials--facebook{
+    background-color: #3a5a98;
+    color: var(--white-color);
+}
+
+.auth-form__socials--facebook,
+.auth-form__socials-icon{
+    color: var(--white-color);
+}
+
+.auth-form__socials-title{
+    margin: 0 30px;
+}
+
+.auth-form__socials--google{
+    background-color: var(--white-color);
+    color: #666;
+}
+
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-seperate{
+    display: block;
+    border-left: 1px solid #EAEAEA;
+    height: 22px;
+    margin: -3px 16px 0;
+}
+
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+
+.time__content{
+    width: 100%;
+    background-color: var(--black-color);
+    color: white;
+    padding-top: 10px;
+    border-top: solid 6px #d3bda2;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.time__content-dynasty-bar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.time__content-timeline-bar{
+    display: flex;
+    margin: 10px;
+    height: 10px;
+}
+
+.time__content-timeline-bar a:nth-child(1){
+    width: 20%;
+    background-color: white;
+}
+.time__content-timeline-bar a:nth-child(2){
+    width: 20%;
+    background-color: rgb(255, 0, 0);
+}
+.time__content-timeline-bar a:nth-child(3){
+    width: 20%;
+    background-color: rgb(217, 255, 0);
+}
+.time__content-timeline-bar a:nth-child(4){
+    width: 20%;
+    background-color: rgb(0, 255, 106);
+}
+.time__content-timeline-bar a:nth-child(5){
+    width: 20%;
+    background-color: rgb(4, 0, 255);
+}
+
+.time__content-timeline-bar a:hover{
+    opacity: 0.8;
+}
+
+.time__content-bar{
+    display: flex;
+    font-size: 0.5rem;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.time__content-year-bar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Quiz/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="start_btn">
+        <button>Bắt Đầu</button>
+    </div>
+    <div class="info_box">
+        <div class="info_title">
+            <Span>một vài thể lệ cuộc chơi</Span>
+        </div>
+        <div class="info_list">
+            <div class="info">1.Một Câu Hỏi bạn Sẽ có <span>15s</span> Để Trả Lời</div>
+            <div class="info">2.Hết 15S Thì Bạn Sẽ Không Được Chọn Nữa</div>
+            <div class="info">3.Bạn Chỉ Được Chọn Đáp Án Một Lần Duy Nhất</div>
+            <div class="info">4.Mỗi Ván sẽ Có 5 Câu Hỏi</div>
+        </div>
+        <div class="buttons">
+            <a href="./index.html"><button class="quit">Exit</button></a>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    
+    <div class="quiz_box">
+        <header>
+            <div class="title">Câu Hỏi Lịch Sử Thú Vị</div>
+            <div class="timer">
+                <div class="time_text">Thời Gian Còn Lại</div>
+                <div class="time_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>Nhà Trần Có Bao Nhiêu Triều Đại</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>11</span>
+                </div>
+                <div class="option">
+                    <span>12</span>
+                </div>
+                <div class="option">
+                    <span>13</span>
+                </div>
+                <div class="option">
+                    <span>14</span>
+                </div> -->
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>trên<p>5</p> câu hỏi</span> -->
+            </div>
+            <button class ="next_btn">Câu Tiếp</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa fa-cloud"></i>
+        </div>
+        <div class="complete_text">
+            Chúc Mừng Bạn Đã Hoàn Thành!
+        </div>
+        <div class="score_text">
+            <span>Bạn Đã Trả Lời Đúng <p class="quiz_true"></p> trên <p>5</p> Câu</span>
+        </div>
+        <div class="buttons">
+            <a href="./index.html"><button class="quit">Thoát </button></a>
+            <button class="restart">Chơi Lại</button>
+        </div>
+    </div>
+
+    <script src="./Quiz/question.js"></script>
+    <script src="./Quiz/quiz.js"></script>
+</body>
+</html>
