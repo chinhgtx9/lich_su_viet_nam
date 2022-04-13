@@ -112,7 +112,7 @@
     position: relative;
     background-image: url(https://i.ibb.co/L1JqVv8/delhi-city-desktop.jpg);
     background-size: cover;
-    height: 1300px;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -232,7 +232,8 @@
     width: 100%;
     max-width: 730px;
     margin: auto;
-    height: 400px;
+    height: 100%;
+    padding: 50px 0;
 }
 
 .detail-introduce__header{
@@ -333,11 +334,12 @@
     position: relative;
     background-image: url(https://i.ibb.co/HgRGsCL/Vietnam-map-boundaries-cities-locator.webp);
     background-size: cover;
-    height: 1000px;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 0 50px 0;
 }
 
 .body-content__header{
@@ -376,7 +378,7 @@
     padding: 10px;
     margin: 0 auto;
     flex: 0.5;
-    min-width: 300px;
+    min-width: 200px;
     width: 100%;
 }
 
@@ -438,7 +440,7 @@
     padding: 10px;
     background-color: var(--white-color);
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .body-content__brief-detail{
@@ -549,7 +551,7 @@
     display: flex;
     justify-content: flex-end;
     height: 44px;
-    width: 165px;
+    max-width: 165px;
     cursor: pointer;
 }
 
@@ -774,3 +776,82 @@
 
 
 
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .detail-introduce__title h1{
+        font-size: 0.8rem;
+    }
+    .detail-introduce__title h2{
+        font-size: 0.6rem;
+    }
+    .detail-introduce__share i,
+    .detail-introduce__share h2{
+        font-size: 0.6rem;
+    }
+    .body-content__header-title{
+        font-size: 1rem;
+    }
+    .body-content__header-view-more{
+        font-size: 0.8rem;
+    }
+    .info-box__close span{
+        display: none;
+    }
+    .time__content{
+        display: none;
+    }
+    .detail-introduce__content{
+        margin: 15px;
+    }
+    .auth-form1,
+    .auth-form2{
+    width: 200px;
+    }
+    .auth-form__heading{
+        font-size: 1.5rem;
+    }
+    .auth-form__switch-btn1,
+    .auth-form__switch-btn2{
+    font-size: 0.8rem;
+    }
+    .auth-form__input{
+        font-size: 0.9rem;
+    }
+    .auth-form__help-link{
+        font-size: 1rem;
+    }
+    .btn{
+        min-width: 40px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .auth-form__socials-icon,
+    .auth-form__socials--google{
+    color: var(--primary-color);
+    }
+    .auth-form__socials-title{
+        display: none;
+    }
+    .auth-form__socials--facebook{
+        background-color: var(--white-color);
+        color: var(--white-color);
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+     
+
+ } 
