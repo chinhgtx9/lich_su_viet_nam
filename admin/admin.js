@@ -7,6 +7,8 @@ const answer_c = document.getElementById('answer_c');
 const answer_d = document.getElementById('answer_d');
 const btn = document.getElementById('btn');
 const btn_exit = document.getElementById('btn_exit');
+
+
 var questionApi = 'https://6246f1afe3450d61b004d310.mockapi.io/questions';
 //tai cau hoi len server
 btn.onclick = () => {
